@@ -1,3 +1,7 @@
 import fetchJoke from "./fetchJoke";
+import "./styles/index.scss";
 
-console.log(fetchJoke());
+const jokeBtn = document.getElementById("jokeBtn");
+jokeBtn.addEventListener("click", fetchJoke);
+
+fetchJoke();
